@@ -1,0 +1,114 @@
+#form {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url("/images/login-bg2.jpg") no-repeat center center/cover;
+  background-color: #000;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#form::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  pointer-events: none;
+}
+
+
+#form .form-container {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px 60px;
+  border-radius: 20px;
+  box-shadow: 0 0 35px rgba(255, 255, 255, 0.3);
+  width: 100%;
+  max-width: 400px;
+  z-index: 2;
+  text-align: center;
+}
+
+
+#form .form-group {
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#form .form-label {
+  text-align: left;
+  width: 250px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #f0f0f0;
+  font-size: 1rem;
+}
+
+
+#form .form-input,
+#form .form-control {
+  width: 250px;
+  height: 45px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(139, 28, 28, 0.25);
+  color: #000;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+#form .form-input:focus,
+#form .form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 10px #0d6efd;
+  background-color: rgba(255, 255, 255, 0.95);
+  outline: none;
+}
+
+
+#form .form-button {
+  background-color: #0d6efd;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 10px;
+  width: 250px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+#form .form-button:hover {
+  background-color: #0b5ed7;
+  transform: scale(1.03);
+}
+
+#radio{
+  text-align: left;
+  flex-flow: row;
+  display: flex;
+}
+#form h1{
+  color: #03a1fd; /* cyan accent color */
+  font-weight: 700;
+  font-size: 4rem;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(0, 247, 255, 0.6);
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+#form h1:hover{
+   color: #00d0e6;
+  text-shadow: 0 0 15px rgba(0, 247, 255, 0.8);
+}

@@ -1,0 +1,202 @@
+/* ===== WORKOUT PAGE BACKGROUND ===== */
+.workout-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000;
+}
+#bgslide {
+  width: 100%;
+  height: 70vh; /* Full viewport height */
+  background-image: url("/images/BackGround.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+
+/* === Optional dark overlay === */
+#bgslide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* dark tint */
+}
+
+/* ===== HERO CAROUSEL ===== */
+.hero-carousel {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-carousel img {
+  height: 90vh;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(75%);
+}
+
+.hero-carousel .carousel-caption {
+  bottom: 120px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.hero-carousel h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.hero-carousel p {
+  font-size: 1.2rem;
+}
+
+/* ===== SECTION STYLING ===== */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 50px 0 30px;
+}
+
+/* ===== CONTAINER ===== */
+.container,
+.container-fluid {
+  background: transparent !important;
+  color: #fff;
+}
+
+/* ===== FITNESS CARDS ===== */
+.fitness-card {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+}
+
+.fitness-card img {
+  height: 230px;
+  object-fit: cover;
+}
+
+.fitness-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* ===== BUTTON ===== */
+.fitness-card button {
+  color: cyan;
+  border-color: cyan;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.fitness-card button:hover {
+  background: cyan;
+  color: #000;
+  
+  box-shadow: 0 0 10px cyan;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .hero-carousel img {
+    height: 60vh;
+  }
+
+  .hero-carousel h3 {
+    font-size: 1.8rem;
+  }
+
+  .hero-carousel p {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+}
+#Motivating {
+  height: 60vh;
+  width: 100%;
+  display: flex; /* enables flexbox centering */
+  justify-content: center; /* centers horizontally */
+  align-items: center; /* centers vertically */
+  text-align: center; /* centers text inside */
+}
+
+#Motivating h1 {
+  font-size: 4.5rem;
+  color: white;
+  position: relative;
+  display: inline-block;
+}
+
+#Motivating h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, cyan, magenta, yellow);
+  border-radius: 3px;
+}
+
+#image-text {
+  margin-top: 50px;
+  height: 80vh;
+  width: 100vw;
+  
+  align-items: center;
+  justify-content: center;
+  background-color: #000; /* fallback background */
+  color: white;
+}
+
+#first {
+  background-image: url("/images/Gallery2.jpg");
+  width: 45%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 0 0 10px;
+}
+
+#text {
+  width: 55%;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+
+  border-radius: 0 10px 10px 0;
+}
+
+#text h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: cyan;
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+}
+
+#text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+
+#do-workout{
+  
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+}

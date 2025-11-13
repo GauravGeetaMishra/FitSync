@@ -1,0 +1,159 @@
+/* ===== Page Background ===== */
+.dashboard-container {
+  background: linear-gradient(145deg, #0a0a0a, #1a1a1a);
+  color: #fff;
+  min-height: 100vh;
+ 
+}
+
+.hero-carousel img {
+  height: 60vh;
+  object-fit: cover;
+  filter: brightness(0.8);
+}
+
+.hero-carousel .carousel-caption {
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+}
+
+/* ===== Section Title ===== */
+.section-title {
+  text-align: center;
+  color: #00f7ff;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(0, 247, 255, 0.6);
+}
+
+/* ===== Cards ===== */
+.fitness-card {
+  background-color: #1a1a1a;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.fitness-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
+}
+
+.fitness-card img {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.fitness-card .btn-outline-light {
+  border: 1px solid #00f7ff;
+  color: #00f7ff;
+  transition: all 0.3s ease;
+}
+
+.fitness-card .btn-outline-light:hover {
+  background-color: #00f7ff;
+  color: #000;
+}
+
+
+.custom-progress {
+  background-color: #222;
+  border-radius: 10px;
+  height: 10px;
+}
+
+.custom-progress .progress-bar {
+  background-color: #318486;
+}
+.FixedBg {
+  padding-top: 1.2rem;
+  width: 100vw;
+  height: 80vh;
+  background: linear-gradient(145deg, #0a0a0a, #1a1a1a);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+.custom-progress {
+  margin-top: 3rem;
+  width: 80%;
+  height: 14px;
+  background-color: #030303;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 247, 255, 0.2);
+}
+#image-text {
+  margin-top: 50px;
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000; /* fallback background */
+  color: white;
+}
+
+#bgslide1 {
+  width: 100%;
+  height: 70vh; 
+  background-image: url("/images/Woman.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+
+
+#bgslide1::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); 
+}
+
+#first {
+  background-image: url("/images/Gallery2.jpg"); /* use absolute path */
+  width: 45%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 0 0 10px;
+}
+
+#text {
+  width: 55%;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+
+  border-radius: 0 10px 10px 0;
+}
+
+#text h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: cyan;
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+}
+
+#text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+#footer{
+  
+}

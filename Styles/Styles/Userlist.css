@@ -1,0 +1,93 @@
+/* Container */
+.userlist-container1 {
+ margin-top: 100px;
+  background-color: #0f0f0f;
+  color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  height: 100vh;
+}
+.userlist-container {
+ margin-top: 100px;
+  background-color: #0f0f0f;
+  color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+ 
+}
+
+
+/* Header Alert */
+.userlist-alert {
+  text-align: center;
+  font-weight: bold;
+  background: linear-gradient(90deg, #007bff, #00bcd4);
+  color: #fff;
+  border-radius: 8px;
+}
+
+/* Table Styling */
+.user-table {
+  background-color: #1c1c1c;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+.user-table-header th {
+  background-color: #222;
+  color: #00e5ff;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-align: center;
+}
+
+.user-row:hover {
+  background-color: #2c2c2c;
+  transition: 0.3s ease;
+}
+
+.user-field-id,
+.user-field-name,
+.user-field-email,
+.user-field-role,
+.user-field-age,
+.user-field-gender,
+.user-field-height,
+.user-field-weight {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+
+/* Action Buttons */
+.action-button {
+  margin: 0 5px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.delete-btn {
+  background-color: #ff4d4d;
+  border: none;
+}
+
+.delete-btn:hover {
+  background-color: #ff1a1a;
+}
+
+.edit-btn {
+  background-color: #2196f3;
+  border: none;
+}
+
+.edit-btn:hover {
+  background-color: #0b7dda;
+}
+
+/* No users alert */
+.no-user-alert {
+  text-align: center;
+  background-color: #ffcc00;
+  color: #000;
+  font-weight: bold;
+}

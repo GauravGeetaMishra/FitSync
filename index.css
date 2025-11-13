@@ -1,0 +1,7 @@
+/* Add space below the fixed navbar */
+body {
+  background-color: #000;
+  color: #fff;
+  padding-top: 70px;  /* 👈 Adjust based on navbar height */
+  margin: 0;
+}

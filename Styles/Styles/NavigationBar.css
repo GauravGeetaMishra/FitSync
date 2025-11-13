@@ -1,0 +1,58 @@
+/* === NAVBAR CONTAINER === */
+.custom-navbar {
+  margin-bottom: 80px;
+  background-color: rgba(15, 15, 15, 0.9); /* semi-transparent deep black */
+  backdrop-filter: blur(20px); /* glassy blur effect */
+  height: 70px;
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  border-bottom: 2px solid rgba(5, 81, 247, 0.1); /* subtle border line */
+}
+
+/* === BRAND TEXT === */
+.navbar-brand-text {
+  color: #03a1fd; /* cyan accent color */
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(0, 247, 255, 0.6);
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar-brand-text:hover {
+  color: #00d0e6;
+  text-shadow: 0 0 15px rgba(0, 247, 255, 0.8);
+}
+
+/* === NAV LINKS === */
+.custom-nav-links .nav-link {
+  color: #f5f5f5 !important;
+  font-weight: 400;
+ margin-left: 20px;
+  transition: color 0.3s ease, transform 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.custom-nav-links .nav-link:hover {
+  color: #00f7ff !important;
+  transform: scale(1.05);
+}
+
+/* === ACTIVE / CURRENT PAGE LINK === */
+.custom-nav-links .nav-link.active {
+  font-weight: 700;
+  color: #e7e7e7 !important;
+  border-bottom: 2px solid #0d10e0;
+}
+
+/* === SCROLLED EFFECT === */
+.custom-navbar.scrolled {
+  background-color: rgba(10, 10, 10, 0.95);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
+}
